@@ -1,6 +1,6 @@
 <?php 
     include_once("../control/Pelicula.php");
-    $obj=new Pelicula($_GET["titulo"],$_GET['actores'],$_GET["director"],$_GET["guion"],$_GET["produccion"],$_GET["anio"],$_GET["nacionalidad"],$_GET["genero"],$_GET["duracion"],$_GET["restriccion"],$_GET["sinopsis"]);
+    $obj=new Pelicula($_POST["titulo"],$_POST['actores'],$_POST["director"],$_POST["guion"],$_POST["produccion"],$_POST["anio"],$_POST["nacionalidad"],$_POST["genero"],$_POST["duracion"],$_POST["restriccion"],$_POST["sinopsis"]);
 ?>
 <html>
     <head>

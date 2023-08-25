@@ -12,6 +12,7 @@ class Pelicula{
     private $duracion;
     private $restriccion;
     private $sinopsis;
+    
     public function __construct($nombre,$actores,$director,$guion,$produccion,$anio,$nacionalidad,$genero,$duracion,$restriccion,$sinopsis){
         $this->nombre=$nombre;
         $this->actores=$actores;
