@@ -45,8 +45,9 @@
         }
     </script>
     <form action="formAccion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
-        <input type="text" name="operando1" id="operando1">
-        <input type="text" name="operando2" id="operando2">
+        <h1 class="titulo">Operaciones con 2 numeros</h1>
+        <input type="number" name="nro1" id="nro1" placeholder="2">
+        <input type="number" name="nro2" id="nro2" placeholder="5">
         <select name="operacion" id="operacion">
             <option value="suma">Suma</option>
             <option value="resta">Resta</option>

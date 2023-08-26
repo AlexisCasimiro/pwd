@@ -1,0 +1,19 @@
+.form-control{
+    background-color: beige;
+    margin-bottom: 1rem;
+    padding:1rem; 
+    width: 40%;
+    position: relative;
+    align-items:center;
+}
+#formulario{
+    position: relative;
+    align-items: center;
+}
+
+.container{
+    width: 75%;
+    text-align: center;
+    
+
+}

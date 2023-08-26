@@ -63,7 +63,7 @@
         }
     </script>
     <div class="form-tabla">
-        <form action="../control/formulario.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
+        <form action="accion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
             <table>
                 <tr>
                     <td class="form-tag">Nombre:</td>
@@ -84,9 +84,9 @@
                 <tr>
                     <td class="form-tag">Estudios:</td>
                     <td>
-                        <input type="checkbox" name="sin-estudios" id="sin-estudios" value="No tiene estudios">No tiene estudios <br>
-                        <input type="checkbox" name="estudios-primarios" id="estudios-primarios" value="Estudios Primarios">Estudios Primarios <br>
-                        <input type="checkbox" name="estudios-secundarios" id="estudios-secundarios" value="Estudios Secundarios">Estudios Secundarios
+                        <input type="radio" name="estudios" id="sin-estudios" value="No tiene estudios">No tiene estudios <br>
+                        <input type="radio" name="estudios" id="estudios-primarios" value="Estudios Primarios">Estudios Primarios <br>
+                        <input type="radio" name="estudios" id="estudios-secundarios" value="Estudios Secundarios">Estudios Secundarios
                     </td>
                 </tr>
                 <tr>
@@ -109,10 +109,10 @@
                 <tr>
                     <td class="form-tag">Deportes:</td>
                     <td>
-                        <input type="checkbox" name="futbol" id="futbol" value="futbol">Futbol <br>
-                        <input type="checkbox" name="basket" id="basquet" value="basquet">Basquet <br>
-                        <input type="checkbox" name="tennis" id="tennis" value="tennis">Tennis <br>
-                        <input type="checkbox" name="voley" id="voley" value="voley">Voley
+                        <input type="checkbox" name="deporte[]" id="futbol" value="futbol">Futbol <br>
+                        <input type="checkbox" name="deporte[]" id="basquet" value="basquet">Basquet <br>
+                        <input type="checkbox" name="deporte[]" id="tennis" value="tennis">Tennis <br>
+                        <input type="checkbox" name="deporte[]" id="voley" value="voley">Voley
                     </td>
                 </tr>
                 <tr>

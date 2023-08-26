@@ -1,15 +1,15 @@
 <?php
 include_once("../control/Operacion.php");
-$obj=new Operacion;
-$resultado=$obj->resolucion();
+
+$obj=new Operacion($_GET["nro1"],$_GET["nro2"],$_GET["operacion"]);
+
 ?>
-<html>
-    <head>
-        <title>ejercicio 7</title>
-    </head>
-    <body>
-        <?php
-        echo $resultado;
-        ?>
-    </body>
-</html>
+
+<div class="container">
+    <h2> El resultado de la <?php echo($obj->getOperacion()); ?> entre 
+        <?php echo($obj->getNro1()); ?> y <?php echo($obj->getNro2()); ?> es:
+    </h2>
+    
+    <div> <?php echo($obj->resolucion()) ?> </div>
+    
+</div>

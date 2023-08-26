@@ -17,7 +17,8 @@
         return resp;
     }
 </script>
-    <form action="../control/vernumero.php" method="get" name="formNum" id="formNum" onsubmit="return validar();">
+    <h1>Ejercicio N°1</h1>
+    <form action="accionNumero.php" method="get" name="formNum" id="formNum" onsubmit="return validar();">
         Ingrese un numero: <input type="number" name="numero" id="numero">
         <input type="submit" value="enviar">
     </form>
