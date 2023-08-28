@@ -34,7 +34,7 @@ class Entrada {
             $precio=160;
 
         }// fin if
-        elseif($estudiante && $edad>=12){
+        if($estudiante && $edad>=12){
             $precio=180;
 
         }// fin elseif
