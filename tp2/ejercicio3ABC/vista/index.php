@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grupo 5 TP2 Ejercicio 3</title>
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
             <div class="col-md-4"></div>
                 <div class="col-md-4 my-5">
                     <h1  style="text-align:center; vertical-align: middle;">Merber Login</h1>
-                    <form action="login.php" id="formLogin" method="post">
+                    <form action="./accion/login.php" id="formLogin" method="post">
                         <div class="mb-3">
                             <label for="usuario" class="form-label">Usuario</label>
                             <input type="text" class="form-control" name="usuario" id="usuario" placeholder="👤Username">
@@ -37,7 +37,7 @@
             <div class="col-md-4"></div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="validacion.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/validacion.js"></script>
 </body>
 </html>

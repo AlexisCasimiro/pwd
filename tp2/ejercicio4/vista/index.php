@@ -14,7 +14,7 @@
 <div class="card">
 <h3 class="bg-info text-primary shadow-lg p-3 mb-5 bg-body-tertiary rounded"><i class="bi bi-pencil-square"></i>Cinem@s</h3>
 
-    <form action="datos.php" class="row g-3 needs-validation" method="post" id="form-cinemas" name="form-cinemas" novalidate >
+    <form action="./accion/datos.php" class="row g-3 needs-validation" method="post" id="form-cinemas" name="form-cinemas" novalidate >
         <!--SECCION => TITULO -->
         <div class="col-md-6">
             <label for="titulo" class="form-label">Titulo</label>
@@ -119,8 +119,8 @@
         <div class="col-md-12">
         </div>
     </form>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="validacion.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/validacion.js"></script>
 </div>
     
 </body>
