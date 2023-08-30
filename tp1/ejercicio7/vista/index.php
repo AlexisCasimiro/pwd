@@ -44,7 +44,7 @@
             return resp;
         }
     </script>
-    <form action="formAccion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
+    <form action="accion/formAccion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
         <h1 class="titulo">Operaciones con 2 numeros</h1>
         <input type="number" name="nro1" id="nro1" placeholder="2">
         <input type="number" name="nro2" id="nro2" placeholder="5">

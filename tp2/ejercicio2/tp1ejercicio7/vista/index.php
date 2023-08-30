@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="formAccion.php" method="get" name="formulario" id="formulario"> <!--onsubmit="return validar();"-->
+    <form action="accion/formAccion.php" method="get" name="formulario" id="formulario"> <!--onsubmit="return validar();"-->
         <input type="number" name="operando1" id="operando1">
         <div id="error-operando1"></div>
         <input type="number" name="operando2" id="operando2">

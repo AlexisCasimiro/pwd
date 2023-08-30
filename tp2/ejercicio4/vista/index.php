@@ -14,7 +14,7 @@
 <div class="card">
 <h3 class="bg-info text-primary shadow-lg p-3 mb-5 bg-body-tertiary rounded"><i class="bi bi-pencil-square"></i>Cinem@s</h3>
 
-    <form action="./accion/datos.php" class="row g-3 needs-validation" method="post" id="form-cinemas" name="form-cinemas" novalidate >
+    <form action="accion/datos.php" class="row g-3 needs-validation" method="post" id="form-cinemas" name="form-cinemas" novalidate >
         <!--SECCION => TITULO -->
         <div class="col-md-6">
             <label for="titulo" class="form-label">Titulo</label>

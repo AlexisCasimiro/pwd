@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="form-tabla">
-        <form action="./accion.php" method="get" name="formulario" id="formulario">
+        <form action="accion/accion.php" method="get" name="formulario" id="formulario">
             <table>
                 <tr>
                     <td class="form-tag">Nombre:</td>

@@ -28,7 +28,7 @@
         }
     </script>
     <div class="container">
-    <form action="formAccion.php" method="get" name="formulario" id="formulario" onsubmit="return validarForm()">
+    <form action="accion/formAccion.php" method="get" name="formulario" id="formulario" onsubmit="return validarForm()">
         <h1 class="cine">Cine Cinam@s</h1>
         <h3 class="entrada">Ingrese sus datos para calcular la entrada: </h3>
         <div class="form-control">

@@ -38,7 +38,7 @@
             return resp;
         }
     </script>
-    <form action="accion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
+    <form action="accion/accion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
         <h1> Ingrese las horas cursadas </h1>
         <label for="lunes">Lunes</label>
         <input name="lunes" id="lunes" type="number" value="0"> <br>

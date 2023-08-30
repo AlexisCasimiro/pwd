@@ -63,7 +63,7 @@
         }
     </script>
     <div class="form-tabla">
-        <form action="accion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
+        <form action="accion/accion.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
             <table>
                 <tr>
                     <td class="form-tag">Nombre:</td>

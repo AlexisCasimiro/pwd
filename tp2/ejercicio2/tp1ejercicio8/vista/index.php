@@ -11,7 +11,7 @@
             color:red;
         }
     </style>
-    <form action="formAccion.php" method="get" name="formulario" id="formulario" >
+    <form action="accion/formAccion.php" method="get" name="formulario" id="formulario" >
         <label for="edad">Edad:</label>
         <input type="number" name="edad" id="edad" >
         <div id="error-edad" class="errores"></div>

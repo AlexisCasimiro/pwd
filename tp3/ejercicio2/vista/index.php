@@ -16,7 +16,7 @@
 <div class="container w-50">
 
         <h1 class="p-3 mb-3 bg-primary">LECTURA DE UN ARCHIVO</h1>
-        <form action="../vista/accionLeerArchivo.php" method="POST" enctype="multipart/form-data">
+        <form action="accion/accionLeerArchivo.php" method="POST" enctype="multipart/form-data">
             <div class="p-3 mb-3">
                 <p class="">Subir archivo</p>
                 <input type="file"  name="archivo" id="archivo">

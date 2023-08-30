@@ -8,7 +8,7 @@
 <body>
     <style>
     </style>
-    <form action="login.php" method="post" id="formLogin">
+    <form action="accion/login.php" method="post" id="formLogin">
         <label for="usuario">Usuario:</label>
         <input type="text" name="usuario" id="usuario">
         <div id="error-usuario" class="errores"></div>

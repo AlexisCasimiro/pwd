@@ -18,7 +18,7 @@
             <div class="col-md-4"></div>
                 <div class="col-md-4 my-5">
                     <h1  style="text-align:center; vertical-align: middle;">Merber Login</h1>
-                    <form action="./accion/login.php" id="formLogin" method="post">
+                    <form action="accion/login.php" id="formLogin" method="post">
                         <div class="mb-3">
                             <label for="usuario" class="form-label">Usuario</label>
                             <input type="text" class="form-control" name="usuario" id="usuario" placeholder="👤Username">

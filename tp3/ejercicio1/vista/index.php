@@ -21,7 +21,7 @@
         // obtengo los datos , lo envio a un accion y luego se los mando al control
         ?>
         <h1 class="p-3 mb-3">Seleccione el archivo a subir</h1>
-        <form action="../vista/accionArchivo.php" method="POST" enctype="multipart/form-data">
+        <form action="accion/accionArchivo.php" method="POST" enctype="multipart/form-data">
             <div>
                 
                 <input type="file"  name="archivo" id="archivo">
