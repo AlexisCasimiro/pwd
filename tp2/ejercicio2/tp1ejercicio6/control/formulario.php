@@ -1,53 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-        $nombre=$_GET["nombre"] ;
-        $apellido=$_GET["apellido"] ;
-        $edad=$_GET["edad"] ;
-        $direccion=$_GET["direccion"] ;
-        $estudios="";
-        $deportes="";
-        $cantDeportes=0;
+<?php
+class formulario{
+    private $nombre; 
+    private $apellido; 
+    private $direccion; 
+    private $edad;
+    private $sexo; 
+    private $estudios; 
+    private $deportes; 
+    
+    public function __construct($nombre,$apellido,$direccion,$edad,$sexo,$estudios,$deportes){
+        $this->nombre=$nombre;
+        $this->apellido=$apellido;
+        $this->direccion=$direccion; 
+        $this->edad=$edad;
+        $this->sexo=$sexo; 
+        $this->estudios=$estudios; 
+        $this->deportes=$deportes;
+    }// fin function 
 
-        //checkboc de estudios
-        if(!empty($_GET["sin-estudios"])){
-            $estudios=$estudios . $_GET["sin-estudios"];
-        }
-        if(!empty($_GET["estudios-primarios"])){
-            $estudios=$estudios . $_GET["estudios-primarios"];
-        }
-        if(!empty($_GET["estudios-secundarios"])){
-            $estudios=$estudios . "-" . $_GET["estudios-secundarios"];
-        }
-        //checkbox de deportes
-        if(!empty($_GET["futbol"])){
-            $cantDeportes=$cantDeportes+1;
-            $deportes=$deportes . $_GET["futbol"];
-        }
-        if(!empty($_GET["basket"])){
-            $cantDeportes=$cantDeportes+1;
-            $deportes=$deportes . "-" . $_GET["basket"];
-        }
-        if(!empty($_GET["tennis"])){
-            $cantDeportes=$cantDeportes+1;
-            $deportes=$deportes . "-" . $_GET["tennis"];
-        }
-        if(!empty($_GET["voley"])){
-            $cantDeportes=$cantDeportes+1;
-            $deportes=$deportes . "-" . $_GET["voley"];
-        }
+    public function getNombre(){
+        return $this->nombre; 
+    }// fin getNombre
 
-        $sexo=$_GET["sexo"];
-        echo "<h1>Hola me llamo $nombre, $apellido tengo $edad años, vivo en $direccion, soy del sexo $sexo </h1><br>
-        <h3>Estudios: $estudios</h3> <br>
-        <h3>Cantidad de deportes:$cantDeportes<h3> <br>
-        <h3>Nombre de los deportes:$deportes</h3>";
-    ?>
-</body>
-</html>
+        public function getApellido(){
+        return $this->apellido; 
+    }// fin getApellido
+
+        public function getDireccion(){
+        return $this->direccion; 
+    }// fin getDireccion
+
+        public function getEdad(){
+        return $this->edad; 
+    }// fin getEdad
+
+    public function getSexo(){
+        return $this->sexo; 
+    }// fin getEdad
+
+    public function getEstudios(){
+        return $this->estudios; 
+    }// fin getEstudios
+
+    public function getDeportes(){
+        return $this->deportes; 
+    }// fin getEstudios
+
+    /**
+     * mostrar deporte
+     * @return array
+     */
+    public function mostrarDeportes(){
+        $cont=0;
+        $deporte=[];
+        $longitud=count($this->getDeportes());
+        for($i=0; $i<$longitud;$i++){
+            if(!empty($this->getDeportes()[$i])){
+                $deporte[$cont]=$this->getDeportes()[$i];
+                $cont++;
+            }// 
+
+        }// fin for 
+
+        return $deporte;
+
+    }// fin function
+
+    
+    /**
+     * toString
+     */
+    public function __toString()
+    {
+        return "<p>Hola, soy ".$this->getNombre()."  ".$this->getApellido()." <br>".
+        "tengo ".$this->getEdad()." años "."  y vivo en ".$this->getDireccion()."<br>"
+        ." mi sexo es: ".$this->getSexo()." y mis estudios son : ".$this->getEstudios().
+        " </p>"; 
+    }// fin toString
+
+}// fin clase 
+
+?>

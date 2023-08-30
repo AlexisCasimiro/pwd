@@ -1,37 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-        $nombre=$_GET["nombre"] ;
-        $apellido=$_GET["apellido"] ;
-        $edad=$_GET["edad"] ;
-        $direccion=$_GET["direccion"] ;
-        $estudios="";
-        //$estudios=$_GET["estudios"];
+<?php
+class formulario{
+    private $nombre; 
+    private $apellido; 
+    private $direccion; 
+    private $edad;
+    private $sexo; 
+    private $estudios; 
+    
+    public function __construct($nombre,$apellido,$direccion,$edad,$sexo,$estudios){
+        $this->nombre=$nombre;
+        $this->apellido=$apellido;
+        $this->direccion=$direccion; 
+        $this->edad=$edad;
+        $this->sexo=$sexo; 
+        $this->estudios=$estudios; 
+    }// fin function 
 
-        if(!empty($_GET["sin-estudios"])){
-            $estudios=$estudios . $_GET["sin-estudios"];
-        }
-        if(!empty($_GET["estudios-primarios"])){
-            $estudios=$estudios . $_GET["estudios-primarios"];
-        }
-        if(!empty($_GET["estudios-secundarios"])){
-            $estudios=$estudios . "-" . $_GET["estudios-secundarios"];
-        }
+    public function getNombre(){
+        return $this->nombre; 
+    }// fin getNombre
 
-        $sexo=$_GET["sexo"];
-        echo "<h1>Hola me llamo $nombre, $apellido tengo $edad años, vivo en $direccion, soy del sexo $sexo, estudios: $estudios</h1>";
+        public function getApellido(){
+        return $this->apellido; 
+    }// fin getApellido
 
-        /*if($edad>=18){
-            echo "<h1 style='color:green;'>Hola soy MAYOR DE EDAD, me llamo $nombre , $apellido tengo $edad años y vivo en $direccion.</h1>";
-        }else{
-            echo "<h1 style='color:red;'>'Hola soy MENOR DE EDAD, me llamo $nombre , $apellido tengo $edad años y vivo en $direccion'</h1>";
-        }*/
-    ?>
-</body>
-</html>
+        public function getDireccion(){
+        return $this->direccion; 
+    }// fin getDireccion
+
+        public function getEdad(){
+        return $this->edad; 
+    }// fin getEdad
+
+    public function getSexo(){
+        return $this->sexo; 
+    }// fin getEdad
+
+    public function getEstudios(){
+        return $this->estudios; 
+    }// fin getEdad
+
+    
+    /**
+     * toString
+     */
+    public function __toString()
+    {
+        return "<p>Hola, soy ".$this->getNombre()."  ".$this->getApellido()." <br>".
+        "tengo ".$this->getEdad()." años "."  y vivo en ".$this->getDireccion()."<br>"
+        ." mi sexo es: ".$this->getSexo()." y mis estudios son : ".$this->getEstudios()." </p>"; 
+    }// fin toString
+
+}// fin clase 
+
+
+?>

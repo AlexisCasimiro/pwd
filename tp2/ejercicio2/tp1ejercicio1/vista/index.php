@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grupo5 TP2 Ejercicio2 TP1E1</title>
 </head>
 <body>
-    <form action="../control/vernumero.php" method="get" name="formNum" id="formNum">
+    <form action="accionNumero.php" method="get" name="formNum" id="formNum">
         Ingrese un numero: <input type="number" name="numero" id="numero">
         <input type="submit" value="enviar">
     </form>

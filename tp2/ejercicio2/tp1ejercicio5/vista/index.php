@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Grupo5 TP2 Ejercicio 2 TP1E5</title>
 </head>
 <body>
     <div class="form-tabla">
-        <form action="../control/formulario.php" method="get" name="formulario" id="formulario">
+        <form action="./accion.php" method="get" name="formulario" id="formulario">
             <table>
                 <tr>
                     <td class="form-tag">Nombre:</td>
-                    <td><input class="form-input" name="nombre" id="nombre" type="text"><div id="error-nombre"><br></td>
+                    <td><input class="form-input" name="nombre" id="nombre" type="text" required><div id="error-nombre"><br></td>
                 </tr>
                 <tr>
                     <td class="form-tag">Apellido:</td>
-                    <td><input class="form-input" name="apellido" id="apellido" type="text"><div id="error-apellido"><br></td>
+                    <td><input class="form-input" name="apellido" id="apellido" type="text" required><div id="error-apellido"><br></td>
                 </tr>
                 <tr>
                     <td class="form-tag">Edad:</td>
-                    <td><input class="form-input" name="edad" id="edad" type="number" value="0"><div id="error-edad"><br></td>
+                    <td><input class="form-input" name="edad" id="edad" type="number"  required min="1"><div id="error-edad"><br></td>
                 </tr>
                 <tr>
                     <td class="form-tag">Dirección:</td>
-                    <td><input class="form-input" name="direccion" id="direccion" type="text"><div id="error-direccion"><br></td>
+                    <td><input class="form-input" name="direccion" id="direccion" type="text" required><div id="error-direccion"><br></td>
                 </tr>
                 <tr>
                     <td class="form-tag">Estudios:</td>
                     <td>
-                        <input type="checkbox" name="sin-estudios" id="sin-estudios" value="No tiene estudios">No tiene estudios <br>
-                        <input type="checkbox" name="estudios-primarios" id="estudios-primarios" value="Estudios Primarios">Estudios Primarios <br>
-                        <input type="checkbox" name="estudios-secundarios" id="estudios-secundarios" value="Estudios Secundarios">Estudios Secundarios
+                        <input type="checkbox" name="estudios" id="sin-estudios" value="No tiene estudios">No tiene estudios <br>
+                        <input type="checkbox" name="estudios" id="estudios-primarios" value="Estudios Primarios">Estudios Primarios <br>
+                        <input type="checkbox" name="estudios" id="estudios-secundarios" value="Estudios Secundarios">Estudios Secundarios
                         <div id="error-estudios"></div>
                     </td>
                 </tr>
